@@ -64,3 +64,10 @@ Alan :: Worked on proposal.pdf
 Sean :: Worked on proposal.pdf
 John :: Worked on proposal.pdf 
 ==============================================================
+
+2018-05-30
+--------------------------------------------------------------
+Alan :: Made devlog
+Sean :: Revised devlog
+John :: Revised devlog
+==============================================================
