@@ -1,0 +1,40 @@
+2018-05-31
+
+Crucial Jobs
++Find way fo enemies to navigate the map
++Create a map
++Create enemies & towers superclass
++Implement driver
+
+Core Functionality
++Towers
++Enemies
++Map
+
+Additional features
++images for towers, enemies, and map
++levels
++attk speed
+
+PreReqs
++maps
++enemies abstract
++towers abstract
+
+Solo
++different towers
++different enemies
+
+Group
++maps
++abstract tower
++abstract enemies
++pathfinder algo
+
+Timeline
+6/2 have a working map
+6/3 have a superclass for towers and enemies
+6/5 have all towers and enemies for the game
+6/6 iron out bugs make sure the game is playable
+6/7 add extras
+6/8 submit 

@@ -1,0 +1,33 @@
+2018-05-30
+Which jobs are most crucial?
+
+-creating a workable map
+-making sure the screen updates at a consistent rate enough to play it
+-finding a way for towers and enemies to move around map
+
+Which components constitute core functionality (vs non-essential)?
+
+The core functionality consists of having a working tower defense game which
+consists of working towers and enemies. The non-essential components include
+having multiple levels, having complex images for the towers and enemies, and
+including attack speed for the towers and enemies. 
+
+Which components are prerequisites for others?
+
+The components that are the prerequisites for others is a map that works so
+we can build a method that creates towers and enemies. 
+
+Which tasks can be delegated, and which must be collaboratively tackled?
+
+The tasks that can be delegated are the creation of different towers and enemies
+the tasks that must be worked together on are the creation of maps and the
+abstract classes for the towers and enemies. 
+
+What is the timeline, and how does it accommodate setbacks, course changes?
+
+6/2 have a working map
+6/3 have a superclass for towers and enemies
+6/5 have all towers and enemies for the game
+6/6 iron out bugs make sure the game is playable
+6/7 add extras
+6/8 submit 
