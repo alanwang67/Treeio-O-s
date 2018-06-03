@@ -35,8 +35,6 @@ Group
 +pathfinder algo
 
 Timeline
-6/2 have a working map
-6/3 have a superclass for towers and enemies
 6/5 have all towers and enemies for the game
 6/6 iron out bugs make sure the game is playable
 6/7 add extras
