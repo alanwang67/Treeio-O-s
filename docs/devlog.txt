@@ -77,3 +77,10 @@ John :: Revised devlog
 Alan :: Worked on uml, made plan, made flow 
 Sean :: Added submodule
 ==============================================================
+
+2018-06-01
+--------------------------------------------------------------
+Alan :: Revised and made UML more specific
+Sean :: Revised and added to flow chart, revised proposal
+John :: Started working on Driver class
+==============================================================
