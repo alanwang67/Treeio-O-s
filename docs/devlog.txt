@@ -84,3 +84,10 @@ Alan :: Revised and made UML more specific
 Sean :: Revised and added to flow chart, revised proposal
 John :: Started working on Driver class
 ==============================================================
+
+2018-06-02
+--------------------------------------------------------------
+Alan :: Made a map 
+Sean ::
+John :: 
+==============================================================
