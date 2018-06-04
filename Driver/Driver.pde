@@ -1,4 +1,10 @@
+int price;
+int health;
+int level;
+Tower[] tower;
+Enemy[] enemy;
 void setup() {
+  price=100;
   size(600, 600);
   background(0);
   for (int x = 0; x < 7; x++) {
@@ -10,4 +16,7 @@ void setup() {
     }
   }
   rect(0, 160, 55, 160);
+}
+void move(){
+
 }
