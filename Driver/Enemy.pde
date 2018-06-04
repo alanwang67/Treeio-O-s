@@ -1,7 +1,10 @@
 abstract class Enemy{
-    private int health;
-    
+    public color c;
+    public int size;
+    public int health;
+    public float xcor;
+    public float ycor;
     abstract int getHealth();
-    abstract int damage();
-    abstract void move();
+    abstract void damage(int dmg);
+    abstract void display();
 }
