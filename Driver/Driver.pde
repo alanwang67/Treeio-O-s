@@ -1,17 +1,39 @@
-int price;
+int money;
 int health;
 int level;
+int towerPicked;
 ArrayList<Tower> towers;
 ArrayList<Enemy> enemies;
 void mouseClicked() {
   if (get(mouseX, mouseY)==color(0, 255, 0)) {
-    towers.add(new Knight(mouseX, mouseY));
+    if (towerPicked==0) {
+      Knight tmp=new Knight(mouseX, mouseY);
+      if (money>=tmp.price) {
+        towers.add(tmp);
+        money-=tmp.price;
+      }
+    }
+    if (towerPicked==1) {
+      Archer tmp=new Archer(mouseX, mouseY);
+      if (money>=tmp.price) {
+        towers.add(tmp);
+        money-=tmp.price;
+      }
+    }
+  }
+  if (get(mouseX, mouseY)==color(100, 100, 100)){
+    towerPicked=0;
+  }
+  if (get(mouseX, mouseY)==color(185, 66, 244)){
+    towerPicked=1;
   }
 }
 void setup() {
   towers=new ArrayList<Tower>();
   enemies=new ArrayList<Enemy>();
   price=100;
+  money=100;
+  towerPicked=0;
   size(605, 605);
   background(0, 255, 0);
   for (int x = 0; x < 9; x++) {
