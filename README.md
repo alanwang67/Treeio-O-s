@@ -1,9 +1,4 @@
 # Treeio-O-s
-Your team name and roster
-Your project title
-Description of what your project presents to a user, and
-Description of how your project works
-Launch instructions
 APCS2 Final project <br>
 Alan Wang, Sean Roudnitsky, John Liu
 Treeio-O-s
