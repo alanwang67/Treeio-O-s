@@ -1,8 +1,8 @@
 # Treeio-O-s
 APCS2 Final project <br>
-Alan Wang, Sean Roudnitsky, John Liu
-Treeio-O-s
-Tower Defense
+Treeio-O-s<br>
+Alan Wang, Sean Roudnitsky, John Liu<br>
+Tower Defense<br>
 ## Description
 This game is a recreation of a tower defense game. Gameplay consists of picking and placing towers along designated spaces around a path. The player has money and health to kill enemies that try to kill you. Towers will damage enemies and kill them and when the enemies reach the end of the path, they will subtract from your health. You will win when you kill all the enemies, or lose when you lose all of your health.
 ## How it Works
