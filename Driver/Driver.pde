@@ -38,6 +38,10 @@ void setup() {
 
 
 void draw() {
+  text("health:",550,25);
+  text(health,550,50);
+  text("money:",550,75);
+  text(money,550,100);
   if (health>0) {
     for (int i=0; i<towers.size(); i++) {
       towers.get(i).display();
