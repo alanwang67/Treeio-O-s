@@ -7,5 +7,5 @@ abstract class Enemy {
   abstract int getHealth();
   abstract void damage(int dmg);
   abstract void display();
-  abstract void move();
+  abstract boolean traverse();
 }
