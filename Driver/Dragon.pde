@@ -9,7 +9,7 @@ class Dragon extends Enemy {
   int getHealth() {
     return health;
   }
-  void damage(int dmg){
+  void damage(int dmg) {
     health-=dmg;
   }
   void display() {

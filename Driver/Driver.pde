@@ -1,4 +1,5 @@
 int money;
+int price;
 int health;
 int level;
 int towerPicked;
@@ -21,10 +22,10 @@ void mouseClicked() {
       }
     }
   }
-  if (get(mouseX, mouseY)==color(100, 100, 100)){
+  if (get(mouseX, mouseY)==color(100, 100, 100)) {
     towerPicked=0;
   }
-  if (get(mouseX, mouseY)==color(185, 66, 244)){
+  if (get(mouseX, mouseY)==color(185, 66, 244)) {
     towerPicked=1;
   }
 }

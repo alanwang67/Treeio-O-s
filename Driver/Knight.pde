@@ -1,5 +1,5 @@
-class Knight extends Tower{
-  Knight(float x, float y){
+class Knight extends Tower {
+  Knight(float x, float y) {
     c=color(100, 100, 100);
     range=50;
     price=25;
@@ -7,10 +7,10 @@ class Knight extends Tower{
     xcor=x;
     ycor=y;
   }
-  void attack(Enemy s){
+  void attack(Enemy s) {
     s.damage(dmg);
   }
-  boolean inrange(Enemy s){
+  boolean inrange(Enemy s) {
     return sqrt(sq(s.xcor-xcor)+sq(s.ycor-ycor))<=range/2;
   }
   void display() {
