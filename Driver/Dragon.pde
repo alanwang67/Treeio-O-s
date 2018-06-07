@@ -11,32 +11,31 @@ class Dragon extends Enemy {
   int getHealth() {
     return health;
   }
-  void damage(int dmg){
+  void damage(int dmg) {
     health-=dmg;
   }
   void display() {
     fill(c);
     ellipse(xcor, ycor, size, size);
   }
-  void move(){
-    if((xcor<55||get((int)xcor+55,(int)ycor)==color(255, 255, 255))&&xmove==55){
+  void move() {
+    if ((xcor<55||get((int)xcor+55, (int)ycor)==color(255, 255, 255))&&xmove==55) {
       xcor+=xmove;
       return;
     }
-    if(get((int)xcor,(int)ycor+55)==color(255, 255, 255)){
+    if (get((int)xcor, (int)ycor+55)==color(255, 255, 255)) {
       ycor+=ymove;
       return;
     }
     xmove=-55;
-    if(xcor>55&&get((int)xcor-55,(int)ycor)==color(255, 255, 255)&&xmove==-55){
+    if (xcor>55&&get((int)xcor-55, (int)ycor)==color(255, 255, 255)&&xmove==-55) {
       xcor+=xmove;
       return;
     }
     xmove=55;
-    if(get((int)xcor+55,(int)ycor)==color(255, 255, 255)&&xmove==55){
+    if (get((int)xcor+55, (int)ycor)==color(255, 255, 255)&&xmove==55) {
       xcor+=xmove;
       return;
     }
-  }
   }
 }
