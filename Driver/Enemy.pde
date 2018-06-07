@@ -4,8 +4,10 @@ abstract class Enemy {
   public int health;
   public float xcor;
   public float ycor;
+  public float xmove;
+  public float ymove;
   abstract int getHealth();
   abstract void damage(int dmg);
   abstract void display();
-  abstract boolean traverse();
+  abstract void move();
 }
