@@ -1,5 +1,4 @@
-  int i = 0; //used to track moving enemies
-int timer = 0;  
+
 int score;
 int money;
 int price;
@@ -66,18 +65,12 @@ void draw() {
     towers.get(i).display();
   }
 
-  if (timer == 0 && i < enemies.size()) {
-    //for (int i=0; i < enemies.size(); i++) {  
+  for (int i=0; i < enemies.size(); i++) {  
     enemies.get(i).display();
     //enemies.get(i).traverse();
     if (enemies.get(i).traverse() == true) {
       enemies.remove(i);
       score += 1;
     }
-    i += 1;
-  }
-  timer += 1;
-  if (timer == 10) {
-    timer = 0;
   }
 }
