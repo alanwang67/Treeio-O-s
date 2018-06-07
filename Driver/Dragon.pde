@@ -16,4 +16,9 @@ class Dragon extends Enemy {
     fill(c);
     ellipse(xcor, ycor, size, size);
   }
+  void move() {
+    if (ycor > 100) {
+      xcor += 1;
+    }
+  }
 }

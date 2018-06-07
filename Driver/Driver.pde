@@ -51,11 +51,15 @@ void setup() {
     line(55 * x, 0, 55 * x, 605);
     line(0, 55 * x, 605, 55 * x);
   }
+
+  enemies.add(new Dragon(0, 27));
 }
 void draw() {
   for (int i=0; i<towers.size(); i++) {
     towers.get(i).display();
   }
-}
-void move() {
+  for (int i=0; i < enemies.size(); i++) {  
+    enemies.get(i).display();
+    enemies.get(i).move();
+  }
 }
