@@ -41,6 +41,10 @@ LESSONS LEARNED
 - We learned how to use keyPressed, which we needed in order to allow the user that quit the game/start   
 the game over.
 
+- We learned how to use text in the processing window
+
+- We learned how ot retreive the color of a pixel at a given coordinate
+
 
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
