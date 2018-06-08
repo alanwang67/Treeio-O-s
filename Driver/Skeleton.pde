@@ -21,7 +21,7 @@ class Skeleton extends Enemy {
     fill(255,255,255);
     text(health, xcor, ycor);
   }
-  void move() {
+  void move() { //amount of money you earn when you kill a skeleton
     if ((xcor<55||get((int)xcor+55, (int)ycor)==color(255, 255, 255))&&xmove==55) {
       xcor+=xmove;
       return;
