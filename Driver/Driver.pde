@@ -5,6 +5,7 @@ int money;
 int health;
 int level;
 int towerPicked;
+int nextTower;
 ArrayList<Tower> towers;
 ArrayList<Enemy> enemies;
 
