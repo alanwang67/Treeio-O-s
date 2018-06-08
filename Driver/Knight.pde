@@ -10,7 +10,7 @@ class Knight extends Tower{
   void attack(Enemy s){
     s.damage(dmg);
   }
-  boolean inrange(Enemy s){
+  boolean inrange(Enemy s){ //is enemy in range of knight
     return sqrt(sq(s.xcor-xcor)+sq(s.ycor-ycor))<=range/2;
   }
   void display() {
