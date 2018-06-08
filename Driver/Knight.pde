@@ -1,6 +1,6 @@
 class Knight extends Tower{
   Knight(float x, float y){
-    c=color(100, 100, 100);
+    c=color(255, 0, 0);
     range=55;
     price=25;
     dmg=10;
