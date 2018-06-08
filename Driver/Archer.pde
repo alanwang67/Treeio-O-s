@@ -1,7 +1,7 @@
 class Archer extends Tower{
   Archer(float x, float y){
     c=color(185, 66, 244);
-    range=100;
+    range=250;
     price=35;
     dmg=15;
     xcor=(int)x/55*55+55/2;
