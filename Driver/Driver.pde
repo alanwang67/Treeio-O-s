@@ -8,7 +8,7 @@ ArrayList<Enemy> enemies;
 
 
 void setup() {
-  frameRate(5);
+  frameRate(60);
   towers=new ArrayList<Tower>();
   enemies=new ArrayList<Enemy>();
   health=100;
