@@ -82,7 +82,7 @@ void draw() {
       }
     }
   } else {
-    background(0, 0, 0);
+    image(loadImage("gameover.png"),0 , 0);
   }
 }
 
