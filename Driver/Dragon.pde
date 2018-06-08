@@ -17,13 +17,15 @@ class Dragon extends Enemy {
   void display() {
     fill(c);
     ellipse(xcor, ycor, size, size);
+    fill(0,0,255);
+    text(health, xcor, ycor);
   }
   void move() {
     if ((xcor<55||get((int)xcor+55, (int)ycor)==color(255, 255, 255))&&xmove==55) {
       xcor+=xmove;
       return;
     }
-    if (get((int)xcor, (int)ycor+55)==color(255, 255, 255)) {
+    if (ycor>550||get((int)xcor, (int)ycor+55)==color(255, 255, 255)) {
       ycor+=ymove;
       return;
     }
