@@ -11,10 +11,10 @@ ArrayList<Enemy> enemies;
 
 
 void setup() {
-  frameRate(60);
+  frameRate(10);
   towers=new ArrayList<Tower>();
   enemies=new ArrayList<Enemy>();
-  health=100;
+  health=2000;
   money=100;
   towerPicked=0;
   size(605, 605);
@@ -34,29 +34,48 @@ void setup() {
     line(0, 55 * x, 605, 55 * x);
   }
   for (int x=0; x<10; x++) {
-    enemies.add(new Dragon(-x*4*55.0/2-55.0/2, 55.0/2));
+    enemies.add(new Dragon(-x*6*55.0/2-55.0/2, 55.0/2));
   }
+  fill(110);
+  text("health:", 550, 25);
+  text(health, 550, 50);
+  text("money:", 550, 75);
+  text(money, 550, 100);
 }
 
 
 
 void draw() {
-  text("health:",550,25);
-  text(health,550,50);
-  text("money:",550,75);
-  text(money,550,100);
   if (health>0) {
     for (int i=0; i<towers.size(); i++) {
       towers.get(i).display();
     }
     for (int i=0; i<enemies.size(); i++) {
-      if (enemies.get(i).ycor<605) {
-        fill(255, 255, 255);
-        rect(enemies.get(i).xcor-55/2, enemies.get(i).ycor-55/2, 55, 55);
-        enemies.get(i).move();
-        enemies.get(i).display();
+      if (enemies.get(i).getHealth()<=0) {
+        enemies.remove(i);
+        i--;
+        return;
       } else {
-        health-=enemies.get(i).getHealth();
+        for (int j=0; j<towers.size(); j++) {
+          if (towers.get(j).inrange(enemies.get(i))) {
+            towers.get(j).attack(enemies.get(i));
+          }
+        }
+        if (enemies.get(i).ycor<605) {
+          fill(255, 255, 255);
+          rect(enemies.get(i).xcor-55/2, enemies.get(i).ycor-55/2, 55, 55);
+          enemies.get(i).move();
+          enemies.get(i).display();
+        } else {       
+          health-=enemies.get(i).getHealth();
+          enemies.remove(i);
+          i--;
+          fill(0, 255, 0);
+          rect(550, 0, 55, 55);
+          fill(110);
+          text("health:", 550, 25);
+          text(health, 550, 50);
+        }
       }
     }
   } else {
@@ -73,6 +92,11 @@ void mouseClicked() {
       if (money>=tmp.price) {
         towers.add(tmp);
         money-=tmp.price;
+        fill(0, 255, 0);
+        rect(550, 55, 55, 55);
+        fill(110);
+        text("money:", 550, 75);
+        text(money, 550, 100);
       }
     }
     if (towerPicked==1) {
