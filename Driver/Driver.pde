@@ -90,9 +90,12 @@ void draw() {
   }
 }
 
-
-
 void mouseClicked() {
+  for(int i = 0; i < 100; i++) {
+    stack.push("" + (int) random(0,2));
+  }
+  towerPicked = Integer.valueOf(stack.pop());
+  
   if (get(mouseX, mouseY)==color(0, 255, 0)) {
     if (towerPicked==0) {
       Knight tmp=new Knight(mouseX, mouseY);
@@ -111,13 +114,12 @@ void mouseClicked() {
       if (money>=tmp.price) {
         towers.add(tmp);
         money-=tmp.price;
+        fill(0, 255, 0);
+        rect(550, 55, 55, 55);
+        fill(110);
+        text("money:", 550, 75);
+        text(money, 550, 100);
       }
     }
-  }
-  if (get(mouseX, mouseY)==color(100, 100, 100)) {
-    towerPicked=0;
-  }
-  if (get(mouseX, mouseY)==color(185, 66, 244)) {
-    towerPicked=1;
   }
 }
