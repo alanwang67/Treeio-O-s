@@ -52,6 +52,9 @@ void draw() {
     if (nextTower==0) {
       Knight tmp=new Knight(632.5, 82.5);
       tmp.display();
+      fill(0, 255, 0);
+      rect(605, 0, 55, 55);
+      rect(605, 110, 55, 55);
       fill(110);
       text("Next", 610, 25);
       text("Tower:", 610, 50);
@@ -61,6 +64,9 @@ void draw() {
     if (nextTower==1) {
       Archer tmp=new Archer(632.5, 82.5);
       tmp.display();
+      fill(0, 255, 0);
+      rect(605, 0, 55, 55);
+      rect(605, 110, 55, 55);
       fill(110);
       text("Next", 610, 25);
       text("Tower:", 610, 50);
