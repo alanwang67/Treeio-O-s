@@ -92,7 +92,7 @@ void mouseClicked() {
   }
   towerPicked = Integer.valueOf(stack.pop());
 
-  if (get(mouseX, mouseY)==color(0, 255, 0)) {
+  if (get((int)mouseX/55*55+55/2, (int)mouseY/55*55+55/2)==color(0, 255, 0)) {
     if (towerPicked==0) {
       Knight tmp=new Knight(mouseX, mouseY);
       if (money>=tmp.price) {
