@@ -35,13 +35,37 @@ void setup() {
     enemies.add(new Dragon(-x*6*55.0/2-55.0/2, 55.0/2));
   }
   fill(110);
-  text("health:", 550, 25);
-  text(health, 550, 50);
-  text("money:", 550, 75);
-  text(money, 550, 100);
+  text("health:", 555, 25);
+  text(health, 555, 50);
+  text("money:", 555, 75);
+  text(money, 555, 100);
+  for (int i = 0; i < 100; i++) {
+    stack.push("" + (int) random(0, 2));
+  }
 }
 
 void draw() {
+    nextTower=Integer.valueOf(stack.peek());
+    fill(0, 255, 0);
+    rect(605, 55, 55, 55);
+    if (nextTower==0) {
+      Knight tmp=new Knight(632.5, 82.5);
+      tmp.display();
+      fill(110);
+      text("Next", 610, 25);
+      text("Tower:", 610, 50);
+      text("Price:", 610, 135);
+      text(tmp.price, 610, 160);
+    }
+    if (nextTower==1) {
+      Archer tmp=new Archer(632.5, 82.5);
+      tmp.display();
+      fill(110);
+      text("Next", 610, 25);
+      text("Tower:", 610, 50);
+      text("Price:", 610, 135);
+      text(tmp.price, 610, 160);
+    }
   if (health>0) {
     for (int i=0; i<towers.size(); i++) {
       towers.get(i).display();
@@ -52,8 +76,8 @@ void draw() {
         fill(0, 255, 0);
         rect(550, 55, 55, 55);
         fill(110);
-        text("money:", 550, 75);
-        text(money, 550, 100);
+        text("money:", 555, 75);
+        text(money, 555, 100);
         fill(255, 255, 255);
         rect(enemies.get(i).xcor-55/2, enemies.get(i).ycor-55/2, 55, 55);
         enemies.remove(i);
@@ -76,8 +100,8 @@ void draw() {
           fill(0, 255, 0);
           rect(550, 0, 55, 55);
           fill(110);
-          text("health:", 550, 25);
-          text(health, 550, 50);
+          text("health:", 555, 25);
+          text(health, 555, 50);
         }
       }
     }
@@ -95,9 +119,6 @@ void draw() {
 }
 
 void mouseClicked() {
-  for (int i = 0; i < 100; i++) {
-    stack.push("" + (int) random(0, 2));
-  }
   towerPicked = Integer.valueOf(stack.pop());
   if (get(mouseX, mouseY)==color(0, 255, 0)) {
     if (towerPicked==0) {
@@ -108,8 +129,8 @@ void mouseClicked() {
         fill(0, 255, 0);
         rect(550, 55, 55, 55);
         fill(110);
-        text("money:", 550, 75);
-        text(money, 550, 100);
+        text("money:", 555, 75);
+        text(money, 555, 100);
       }
     }
     if (towerPicked==1) {
@@ -120,8 +141,8 @@ void mouseClicked() {
         fill(0, 255, 0);
         rect(550, 55, 55, 55);
         fill(110);
-        text("money:", 550, 75);
-        text(money, 550, 100);
+        text("money:", 555, 75);
+        text(money, 555, 100);
       }
     }
   }
