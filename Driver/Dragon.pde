@@ -7,7 +7,7 @@ class Dragon extends Enemy {
     ycor=y;
     xmove=55;
     ymove=55;
-    reward=5; 
+    reward=5; //amount of money you earn when you kill a dragon
   }
   int getHealth() {
     return health;
@@ -21,7 +21,7 @@ class Dragon extends Enemy {
     fill(255,255,255);
     text(health, xcor, ycor);
   }
-  void move() {
+  void move() { // allows for dragon to move along white color track
     if ((xcor<55||get((int)xcor+55, (int)ycor)==color(255, 255, 255))&&xmove==55) {
       xcor+=xmove;
       return;
