@@ -99,17 +99,24 @@ John :: Started working on Driver class
 
 2018-06-02
 --------------------------------------------------------------
-Alan :: Made a map 
+Alan :: Made a map, update devlog
 Sean ::
 John :: 
+==============================================================
+
+2018-06-06
+--------------------------------------------------------------
+Alan :: Revided proposal
+Sean :: Revised uml, update devlog
+John :: revised flowchart
 ==============================================================
 
 2018-06-07
 -------------------------------------------------------------- 
 Alan :: Implemented stack for adding new towers, added money system, fixed money system,     
-        added text for tower and price, added attack methods for enemies,
+        added text for tower and price, added attack methods for enemies, update devlog, update uml
 Sean :: Fixed bugs with map, fixed damage and health values, fixed bug with damage,   
-        added game over screen, added reward for killing enemies
+        added game over screen, added reward for killing enemies, update devlog, update flowchart
 John :: Fixed bugs with moving enemies, fixed bug with stacked towers, add new subclasses  
-        for enemies and towers, fixed mouseclick bug, inrange method
+        for enemies and towers, fixed mouseclick bug, inrange method, update devlog
 ==============================================================
