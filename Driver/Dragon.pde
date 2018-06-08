@@ -2,7 +2,7 @@ class Dragon extends Enemy {
   Dragon(float x, float y) {
     c=color(100, 100, 100);
     size=50;
-    health=100;
+    health=125;
     xcor=x;
     ycor=y;
     xmove=55;
