@@ -33,7 +33,7 @@ void setup() {
     line(55 * x, 0, 55 * x, 605);
     line(0, 55 * x, 605, 55 * x);
   }
-  for (int x=0; x<10; x++) {
+  for (int x=0; x<100; x++) {
     enemies.add(new Dragon(-x*6*55.0/2-55.0/2, 55.0/2));
   }
   fill(110);
