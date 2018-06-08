@@ -17,7 +17,7 @@ class Dragon extends Enemy {
   void display() {
     fill(c);
     ellipse(xcor, ycor, size, size);
-    fill(0,0,255);
+    fill(255,255,255);
     text(health, xcor, ycor);
   }
   void move() {
