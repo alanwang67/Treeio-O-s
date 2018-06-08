@@ -1,3 +1,6 @@
+import java.util.Stack;
+Stack<String> stack = new Stack<String>();
+
 int money;
 int health;
 int level;
