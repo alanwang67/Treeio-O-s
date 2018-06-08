@@ -14,7 +14,7 @@ void setup() { // sets up map, frame, and arrays, along with text and stac
   towers=new ArrayList<Tower>();
   enemies=new ArrayList<Enemy>();
   health=2000;
-  money=100;
+  money=200;
   towerPicked=0;
   size(660, 605);
   background(0, 255, 0);
