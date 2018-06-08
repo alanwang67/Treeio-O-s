@@ -33,7 +33,13 @@ void setup() {
     line(0, 55 * x, 660, 55 * x);
   }
   for (int x=0; x<100; x++) {
-    enemies.add(new Dragon(-x*6*55.0/2-55.0/2, 55.0/2));
+    int i=(int) random(0, 2);
+    if (i==0) {
+      enemies.add(new Dragon(-x*6*55.0/2-55.0/2, 55.0/2));
+    }
+    if (i==1) {
+      enemies.add(new Skeleton(-x*6*55.0/2-55.0/2, 55.0/2));
+    }
   }
   fill(110);
   text("health:", 555, 25);
