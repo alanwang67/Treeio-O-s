@@ -15,6 +15,6 @@ class Archer extends Tower{
   }
   void display() {
     fill(c);
-    ellipse(xcor, ycor, 55, 55);
+    ellipse(xcor, ycor, 50, 50);
   }
 }
