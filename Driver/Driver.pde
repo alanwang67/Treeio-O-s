@@ -9,7 +9,7 @@ int nextTower;
 ArrayList<Tower> towers;
 ArrayList<Enemy> enemies;
 
-void setup() {
+void setup() { // sets up map, frame, and arrays, along with text and stac
   frameRate(10);
   towers=new ArrayList<Tower>();
   enemies=new ArrayList<Enemy>();
@@ -51,7 +51,7 @@ void setup() {
   }
 }
 
-void draw() {
+void draw() { //shows what is the next tower and price and draws the enemies
     nextTower=stack.peek();
     fill(0, 255, 0);
     rect(605, 55, 55, 55);
@@ -131,7 +131,7 @@ void draw() {
   }
 }
 
-void mouseClicked() {
+void mouseClicked() { //creates towers when mouse is clicked on location based on stack 
   towerPicked = stack.pop();
   if (get(mouseX, mouseY)==color(0, 255, 0)) {
     if (towerPicked==0) {
