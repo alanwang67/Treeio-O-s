@@ -28,15 +28,18 @@ COOL STUFF LEARNED
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We decided to use a stack to determine which tower would be placed next, rather than allowing the user to choose     
+- We decided to use a stack to determine which tower would be placed next, rather than allowing the user to choose     
 which tower they would like to place next. This ws intended to make the game more challenging and more randomized.     
      
-We decided to go with a predesigned map, rather than a randomly generated map, because we realized that with the  
+- We decided to go with a predesigned map, rather than a randomly generated map, because we realized that with the  
 time we had, it wasn't worth figuring doing.
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<tales of wisdom gained...>
+- We learned how to import images into the processing window. We used this to make our game over screen.   
+   
+- We learned how to use keyPressed, which we needed in order to allow the user that quit the game/start   
+the game over.
 
 
 
