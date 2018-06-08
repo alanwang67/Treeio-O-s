@@ -12,8 +12,9 @@ Towers Defense
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<Wow, we so BOSS bc...>
--Creating a function that would restrict where the King moves based on whether it is in check or if it will be in check
+- Figuring out how to make the enemies move without having and afterimage in its previous location.   
+    
+- Making the map
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,13 +62,6 @@ the game over.
 ==============================================================
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-
-yyyy-mm-dd
---------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-==============================================================
 
 2018-05-29
 --------------------------------------------------------------
