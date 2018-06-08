@@ -53,6 +53,11 @@ void draw() {
     for (int i=0; i<enemies.size(); i++) {
       if (enemies.get(i).getHealth()<=0) {
         money+=10;
+        fill(0, 255, 0);
+        rect(550, 55, 55, 55);
+        fill(110);
+        text("money:", 550, 75);
+        text(money, 550, 100);
         fill(255, 255, 255);
         rect(enemies.get(i).xcor-55/2, enemies.get(i).ycor-55/2, 55, 55);
         enemies.remove(i);
