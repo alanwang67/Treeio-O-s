@@ -6,6 +6,7 @@ abstract class Enemy {
   public float ycor;
   public float xmove;
   public float ymove;
+  public int reward;
   abstract int getHealth();
   abstract void damage(int dmg);
   abstract void display();

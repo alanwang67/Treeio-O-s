@@ -3,7 +3,7 @@ class Knight extends Tower{
     c=color(255, 0, 0);
     range=150;
     price=25;
-    dmg=10;
+    dmg=5;
     xcor=(int)x/55*55+55/2;
     ycor=(int)y/55*55+55/2;
   }

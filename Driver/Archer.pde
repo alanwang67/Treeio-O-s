@@ -3,7 +3,7 @@ class Archer extends Tower{
     c=color(185, 66, 244);
     range=250;
     price=35;
-    dmg=15;
+    dmg=10;
     xcor=(int)x/55*55+55/2;
     ycor=(int)y/55*55+55/2;
   }
