@@ -1,5 +1,5 @@
 import java.util.Stack;
-Stack<String> stack = new Stack<String>();
+Stack<Integer> stack = new Stack<Integer>();
 
 int money;
 int health;
@@ -46,7 +46,7 @@ void setup() {
 }
 
 void draw() {
-    nextTower=Integer.valueOf(stack.peek());
+    nextTower=stack.peek();
     fill(0, 255, 0);
     rect(605, 55, 55, 55);
     if (nextTower==0) {
@@ -126,7 +126,7 @@ void draw() {
 }
 
 void mouseClicked() {
-  towerPicked = Integer.valueOf(stack.pop());
+  towerPicked = stack.pop();
   if (get(mouseX, mouseY)==color(0, 255, 0)) {
     if (towerPicked==0) {
       Knight tmp=new Knight(mouseX, mouseY);
