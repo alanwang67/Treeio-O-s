@@ -1,7 +1,7 @@
 class Knight extends Tower{
   Knight(float x, float y){
     c=color(255, 0, 0);
-    range=55;
+    range=150;
     price=25;
     dmg=10;
     xcor=(int)x/55*55+55/2;
@@ -15,6 +15,6 @@ class Knight extends Tower{
   }
   void display() {
     fill(c);
-    ellipse(xcor, ycor, range, range);
+    ellipse(xcor, ycor, 50, 50);
   }
 }
