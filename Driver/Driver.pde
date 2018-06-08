@@ -15,7 +15,7 @@ void setup() {
   health=2000;
   money=100;
   towerPicked=0;
-  size(605, 605);
+  size(660, 605);
   background(0, 255, 0);
   for (int x = 0; x < 9; x++) {
     if (x % 2 == 0) {
@@ -29,7 +29,7 @@ void setup() {
   rect(0, 385, 55, 55);
   for (int x = 0; x < 15; x++) { 
     line(55 * x, 0, 55 * x, 605);
-    line(0, 55 * x, 605, 55 * x);
+    line(0, 55 * x, 660, 55 * x);
   }
   for (int x=0; x<100; x++) {
     enemies.add(new Dragon(-x*6*55.0/2-55.0/2, 55.0/2));
@@ -88,7 +88,7 @@ void draw() {
     if(key == '1') {
       setup();
     } 
-    if(key == '2') {
+    if(key == '2') {  
       exit();
     }
   }
@@ -99,7 +99,6 @@ void mouseClicked() {
     stack.push("" + (int) random(0, 2));
   }
   towerPicked = Integer.valueOf(stack.pop());
-
   if (get(mouseX, mouseY)==color(0, 255, 0)) {
     if (towerPicked==0) {
       Knight tmp=new Knight(mouseX, mouseY);
