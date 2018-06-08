@@ -10,7 +10,7 @@ class Archer extends Tower{
   void attack(Enemy s){
     s.damage(dmg);
   }
-  boolean inrange(Enemy s){
+  boolean inrange(Enemy s){ //is enemy in range of archer
     return sqrt(sq(s.xcor-xcor)+sq(s.ycor-ycor))<=range/2;
   }
   void display() {
