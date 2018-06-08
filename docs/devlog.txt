@@ -24,7 +24,7 @@ maybe some of these will move into the Obs.Ovrcm section...
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<wow! oo! etc!...>
+- We learned that we could place objects outside of the borders of the screen. (The world exists beyond its borders)
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,4 +102,12 @@ John :: Started working on Driver class
 Alan :: Made a map 
 Sean ::
 John :: 
+==============================================================
+
+2018-06-07
+--------------------------------------------------------------
+Alan :: Implemented stack for adding new towers, added money system, fixed money system,  
+Sean :: Fixed bugs with map, fixed damage and health values, fixed bug with damage,  
+John :: Fixed bugs with moving enemies, fixed bug with stacked towers, add new subclasses  
+        for enemies and towers
 ==============================================================
