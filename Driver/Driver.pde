@@ -41,7 +41,7 @@ void setup() {
   text("money:", 555, 75);
   text(money, 555, 100);
   for (int i = 0; i < 100; i++) {
-    stack.push("" + (int) random(0, 2));
+    stack.push((int) random(0, 2));
   }
 }
 
